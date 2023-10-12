@@ -66,9 +66,9 @@ public class HomeWork1 {
     }
 
     public static void checkSign() {
-        int a = 3;
-        int b = 5;
-        int c = -17;
+        int a = (int) (Math.random() * 6);
+        int b = (int) (Math.random() * 5);
+        int c = (int) (Math.random() * -20);
         int sum = a + b + c;
         if (sum >= 0) {
             System.out.println("Сумма положительная");
@@ -79,7 +79,7 @@ public class HomeWork1 {
     }
 
     public static void selectColor() {
-        int data = 19;
+        int data = (int) (Math.random() * 32);
         if (data <= 10) {
             System.out.println("Красный");
         }
@@ -92,8 +92,8 @@ public class HomeWork1 {
     }
 
     public static void compareNumbers() {
-        int a = 26;
-        int b = 98;
+        int a = (int) (Math.random() * 26);
+        int b = (int) (Math.random() * 98);
         if (a >= b) {
             System.out.println("a >= b");
         }
@@ -104,8 +104,8 @@ public class HomeWork1 {
     }
 
     public static void addOrSubstractAndPrint() {
-        int initValue = 17;
-        int delta = 25;
+        int initValue = (int) (Math.random() * 17);
+        int delta = (int) (Math.random() * 25);
         boolean increment = false;
         if (increment == true) {
             System.out.println(initValue + delta);
@@ -129,5 +129,6 @@ public class HomeWork1 {
         }
     }
 }
+
 
 
