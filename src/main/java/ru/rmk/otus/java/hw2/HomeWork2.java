@@ -13,10 +13,10 @@ public class HomeWork2 {
             level = 6;
             interval = 10;
         } else if (difficult == 2) {
-            level = 4;
+            level = 5;
             interval = 9;
         } else if (difficult == 3) {
-            level = 3;
+            level = 4;
             interval = 12;
         } else {
             System.out.println("Сам напросился!!!");
