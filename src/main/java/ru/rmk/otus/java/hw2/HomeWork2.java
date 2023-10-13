@@ -41,7 +41,7 @@ public class HomeWork2 {
                 break;
             }
             if (answer < aiNumber) {
-                System.out.println(answer + " больше моего числа. Попробуй еще раз!");
+                System.out.println(answer + " Загаданное число больше. Попробуй еще раз!");
             } else {
                 System.out.println("Не угадал.\nЗагаданное число меньше!");
             }
