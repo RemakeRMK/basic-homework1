@@ -79,9 +79,9 @@ public class HomeWork1 {
         int data = (int) (Math.random() * 32);
         if (data <= 10) {
             System.out.println("Красный");
-        }else if (data > 10 && data <= 20) {
+        } else if (data > 10 && data <= 20) {
             System.out.println("Желтый");
-        }else if (data > 20) {
+        } else if (data > 20) {
             System.out.println("Зелёный");
         }
     }
@@ -91,7 +91,7 @@ public class HomeWork1 {
         int b = (int) (Math.random() * 98);
         if (a >= b) {
             System.out.println("a >= b");
-        }else if (a < b) {
+        } else if (a < b) {
             System.out.println("a < b");
         }
 
@@ -100,7 +100,7 @@ public class HomeWork1 {
     public static void addOrSubstractAndPrint(int initValue, int delta, boolean increment) {
         if (increment == true) {
             System.out.println(initValue + delta);
-        }else if (increment == false) {
+        } else if (increment == false) {
             System.out.println(initValue - delta);
         }
     }
