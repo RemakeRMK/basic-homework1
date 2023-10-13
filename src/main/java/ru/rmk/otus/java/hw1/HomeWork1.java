@@ -16,7 +16,7 @@ public class HomeWork1 {
             }
             if (tN == 2) {
                 System.out.println("Вы выбрали задание №2");
-                checkSign();
+                checkSign(6, 5, -20);
 
             }
             if (tN == 3) {
@@ -31,7 +31,7 @@ public class HomeWork1 {
 
             }
             if (tN == 5) {
-                addOrSubstractAndPrint();
+                addOrSubstractAndPrint(17, 25, true);
                 System.out.println("Вы выбрали задание №5");
             }
 
@@ -65,10 +65,7 @@ public class HomeWork1 {
         System.out.println("Hello\nWorld\nfrom\nJava");
     }
 
-    public static void checkSign() {
-        int a = (int) (Math.random() * 6);
-        int b = (int) (Math.random() * 5);
-        int c = (int) (Math.random() * -20);
+    public static void checkSign(int a, int b, int c) {
         int sum = a + b + c;
         if (sum >= 0) {
             System.out.println("Сумма положительная");
@@ -82,11 +79,9 @@ public class HomeWork1 {
         int data = (int) (Math.random() * 32);
         if (data <= 10) {
             System.out.println("Красный");
-        }
-        if (data >= 10 && data <= 20) {
+        }else if (data > 10 && data <= 20) {
             System.out.println("Желтый");
-        }
-        if (data > 20) {
+        }else if (data > 20) {
             System.out.println("Зелёный");
         }
     }
@@ -96,21 +91,16 @@ public class HomeWork1 {
         int b = (int) (Math.random() * 98);
         if (a >= b) {
             System.out.println("a >= b");
-        }
-        if (a < b) {
+        }else if (a < b) {
             System.out.println("a < b");
         }
 
     }
 
-    public static void addOrSubstractAndPrint() {
-        int initValue = (int) (Math.random() * 17);
-        int delta = (int) (Math.random() * 25);
-        boolean increment = false;
+    public static void addOrSubstractAndPrint(int initValue, int delta, boolean increment) {
         if (increment == true) {
             System.out.println(initValue + delta);
-        }
-        if (increment == false) {
+        }else if (increment == false) {
             System.out.println(initValue - delta);
         }
     }
