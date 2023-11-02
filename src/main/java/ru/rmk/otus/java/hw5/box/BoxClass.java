@@ -1,4 +1,4 @@
-package ru.rmk.otus.java.hw5Box;
+package ru.rmk.otus.java.hw5.box;
 
 public class BoxClass {
     public static void main(String[] args) {
@@ -6,11 +6,11 @@ public class BoxClass {
             box.info();
             box.setColor("жёлтенькая");
             box.info();
-            box.opened();
+            box.open();
             box.add("Палка");
             box.add("Вилка");
-            box.closed();
             box.add("Ложка");
+            box.close();
             box.add("Кружка");
             box.add("Кекс");
             box.add("Печенье");

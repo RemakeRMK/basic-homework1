@@ -18,7 +18,7 @@ public class HomeWork5 {
                 new User("Осипов", "Алексей", "Сергеевич", 1996, "osipov@gmail.com"),
         };
         for (int i = 0; i < userArray.length; i++) {
-            if (userArray[i].yearOfBirth < date) {
+            if (userArray[i].getYearOfBirth() < date) {
                 userArray[i].info();
             }
 
