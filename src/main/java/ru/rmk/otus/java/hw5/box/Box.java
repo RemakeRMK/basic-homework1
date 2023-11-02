@@ -8,6 +8,7 @@ public class Box {
     private final int height;
     private boolean isOpen;
 
+
     public void setColor(String color) {
         this.color = color;
     }
@@ -52,7 +53,6 @@ public class Box {
         if(items != null){
             System.out.println("В коробке уже есть предмет " + items);
         }
-
     }
 
 

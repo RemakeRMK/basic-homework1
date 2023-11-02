@@ -21,7 +21,6 @@ public class HomeWork5 {
             if (userArray[i].getYearOfBirth() < date) {
                 userArray[i].info();
             }
-
         }
     }
 }

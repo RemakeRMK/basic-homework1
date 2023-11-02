@@ -14,7 +14,6 @@ public class BoxClass {
             box.add("Кружка");
             box.add("Кекс");
             box.add("Печенье");
-
             box.info();
 
 
