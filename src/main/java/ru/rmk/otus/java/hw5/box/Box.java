@@ -25,9 +25,10 @@ public class Box {
     public void open() {
         if (isOpen) {
             System.out.println("Коробка открыта!");
+            this.isOpen = true;
         }else{
             System.out.println("Коробка уже открыта");
-            this.isOpen = true;
+
         }
     }
 
