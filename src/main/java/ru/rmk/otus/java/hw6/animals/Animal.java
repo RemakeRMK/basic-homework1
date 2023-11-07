@@ -11,7 +11,6 @@ public class Animal {
         this.speedRun = speedRun;
         this.swimingSpeed = swimingSpeed;
         this.endurance = endurance;
-
     }
 
     public int run(int distance) {
@@ -29,23 +28,30 @@ public class Animal {
     }
 
     public int swim(int distance) {
-        int time = distance / speedRun;
-        if (this instanceof Cat) {
-            System.out.println("котики не умеют купаться!!!");
-        }
-        if (endurance < distance) {
-            System.out.println("Затраченое время: -1. Вы обоссались, поменяйте штанцы " + name);
-            return -1;
-        }
-        if (speedRun > 0) {
-            System.out.println(name + " пробежит " + distance + " метров за " + time);
-            endurance -= distance;
-            return time;
+        int time = distance / swimingSpeed;
+        int swimDog = 2;
+        int swimHorse = 4;
+        if (this instanceof Dog) {
+            if (endurance * swimDog < distance) {
+                System.out.println("Затраченое время: -1. Вы обоссались, поменяйте штанцы " + name);
+                return -1;
+            }
+            if (this instanceof Horse) {
+                if (endurance * swimHorse < distance) {
+                    System.out.println("Затраченое время: -1. Вы обоссались, поменяйте штанцы " + name);
+                    return -1;
+                }
+            }
+            if (swimingSpeed > 0) {
+                System.out.println(name + " пробежит " + distance + " метров за " + time);
+                endurance -= distance;
+                return time;
+            }
         }
         return -1;
     }
 
-    public void info() {
-        System.out.println(name + " бегает  со скоростью " + speedRun + "м/с, плавает со скоростью " + swimingSpeed + "м/с.");
-    }
-}
+            public void info () {
+                System.out.println(name + " бегает  со скоростью " + speedRun + "м/с, плавает со скоростью " + swimingSpeed + "м/с.");
+            }
+        }
