@@ -7,8 +7,8 @@ import ru.rmk.otus.java.hw6.animals.Horse;
 public class HomeWork6 {
     public static void main(String[] args) {
         Cat cat = new Cat("Zevs", 2, 0, 100);
-        Dog dog = new Dog("Polkan", 4, 2, 150);
-        Horse horse = new Horse("Zarya", 10, 3, 1000);
+        Dog dog = new Dog("Polkan", 4, 2, 150, 2);
+        Horse horse = new Horse("Zarya", 10, 3, 1000, 4);
         cat.run(100);
         dog.run(400);
         horse.run(500);
