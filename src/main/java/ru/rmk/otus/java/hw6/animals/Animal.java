@@ -5,14 +5,15 @@ public class Animal {
     int speedRun;
     int swimingSpeed;
     int endurance;
+    int endurancePerSwimMeter;
 
-    public Animal(String name, int speedRun, int swimingSpeed, int endurance) {
+    public Animal(String name, int speedRun, int swimingSpeed, int endurance, int endurancePerSwimMeter) {
         this.name = name;
         this.speedRun = speedRun;
         this.swimingSpeed = swimingSpeed;
         this.endurance = endurance;
+        this.endurancePerSwimMeter = endurancePerSwimMeter;
     }
-
     public int run(int distance) {
         int time = distance / speedRun;
         if (endurance < distance) {
@@ -35,10 +36,11 @@ public class Animal {
         }
         if (swimingSpeed > 0) {
             System.out.println(name + " проплывет " + distance + " метров за " + time);
-            endurance -= distance;
+            endurance -= distance * endurancePerSwimMeter;
             return time;
         }
         return -1;
+
     }
 
     public void info() {
