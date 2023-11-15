@@ -22,7 +22,7 @@ public class Cat {
 
     public void catEat(Plate plate) {
         if (satiety && plate.decreasePlate(appetite)) {
-            System.out.println("Котик решил перекусить и осталось в тарелке " + plate.currentEat);
+            System.out.println(" Котик решил перекусить и осталось в тарелке " + plate.currentEat);
         }
     }
 }

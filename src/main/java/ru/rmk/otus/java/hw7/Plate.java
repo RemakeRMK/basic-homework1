@@ -28,7 +28,7 @@ public class Plate {
         if (finalEat < 0) {
             currentEat = 0;
             System.out.println("В тарелке еды: " + currentEat);
-            System.out.println("Тарелка пустая!");
+            System.out.println("Тарелка пустая! ");
         }
         return false;
     }

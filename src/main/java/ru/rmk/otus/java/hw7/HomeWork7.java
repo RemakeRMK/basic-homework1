@@ -17,7 +17,7 @@ Plate plate = new Plate(100, 78);
                 System.out.println("Котик по имени " + cats[i].name + " покушал " + plate.currentEat);
             }
             else{
-                System.out.println("Кот " + cats[i].name + " оказался без пайка!");
+                System.out.println("Кот" + cats[i].name + " оказался без пайка!");
             }
         }cats[1].catEat(plate);
     }
