@@ -12,14 +12,13 @@ Plate plate = new Plate(100, 78);
                 new Cat("Valenok", 25),
                 new Cat(" Chypik", 20)};
         for (int i = 0; i < cats.length; i++) {
-            if (cats[i].satiety == true && cats[i].appetite <= plate.currentEat) {
-                cats[i].catSatiety(plate);
-                System.out.println("Котик по имени " + cats[i].name + " покушал " + plate.currentEat);
+            if (cats[i].isSatiety() == true && cats[i].getAppetite() <= plate.getCurrentEat()) {
+                cats[i].eating(plate);
+                System.out.println("Котик по имени " + cats[i].getName() + " покушал " + plate.getCurrentEat());
             }
             else{
-                System.out.println("Кот" + cats[i].name + " оказался без пайка!");
+                System.out.println("Кот" + cats[i].getName() + " оказался без пайка!");
             }
-        }cats[1].catEat(plate);
+        }
     }
-
 }

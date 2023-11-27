@@ -1,8 +1,11 @@
 package ru.rmk.otus.java.hw7;
 
 public class Plate {
-    int maxEat;
-    int currentEat;
+    private int maxEat;
+    private int currentEat;
+    public int getCurrentEat() {
+        return currentEat;
+    }
 
     public Plate(int maxEat, int currentEat) {
         this.maxEat = maxEat;
@@ -30,7 +33,7 @@ public class Plate {
             System.out.println("В тарелке еды: " + currentEat);
             System.out.println("Тарелка пустая! ");
         }
-        return false;
+        return true;
     }
     public void info(){
         System.out.println("В тарелке " + currentEat);
